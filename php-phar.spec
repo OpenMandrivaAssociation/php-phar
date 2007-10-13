@@ -4,7 +4,7 @@
 
 Summary:	Allows running of complete applications out of .phar files
 Name:		php-%{modname}
-Version:	1.2.1
+Version:	1.2.2
 Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
