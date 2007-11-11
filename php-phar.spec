@@ -5,10 +5,10 @@
 Summary:	Allows running of complete applications out of .phar files
 Name:		php-%{modname}
 Version:	1.2.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/syck
+URL:		http://pecl.php.net/package/phar
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 Requires:	php-bz2
 Requires:	php-hash
@@ -71,6 +71,18 @@ extension = %{soname}
 phar.readonly=Off
 phar.require_hash=Off
 EOF
+
+%post
+if [ -f /var/lock/subsys/httpd ]; then
+    %{_initrddir}/httpd restart >/dev/null || :
+fi
+
+%postun
+if [ "$1" = "0" ]; then
+    if [ -f /var/lock/subsys/httpd ]; then
+	%{_initrddir}/httpd restart >/dev/null || :
+    fi
+fi
 
 %clean
 rm -rf %{buildroot}
