@@ -14,6 +14,7 @@ Requires:	php-bz2
 Requires:	php-hash
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	file
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This is the extension version of PEAR's PHP_Archive package. Support for
