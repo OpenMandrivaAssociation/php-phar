@@ -21,16 +21,17 @@ This is the extension version of PEAR's PHP_Archive package. Support for
 zlib, bz2 and crc32 is achieved without any dependency other than the external
 zlib or bz2 extension.
 
-.phar files can be read using the phar stream, or with the Phar class. If the SPL
-extension is available, a Phar object can be used as an array to iterate over a
-phar's contents or to read files directly from the phar.
+.phar files can be read using the phar stream, or with the Phar class. If the
+SPL extension is available, a Phar object can be used as an array to iterate
+over a phar's contents or to read files directly from the phar.
 
 Phar archives can be created using the streams API or with the Phar class, if
 the phar.readonly ini variable is set to false.
 
-Full support for MD5 and SHA1 signatures is possible. Signatures can be required
-if the ini variable phar.require_hash is set to true. When PECL extension hash is
-avaiable then SHA-256 and SHA-512 signatures are supported as well.
+Full support for MD5 and SHA1 signatures is possible. Signatures can be
+required if the ini variable phar.require_hash is set to true. When PECL
+extension hash is avaiable then SHA-256 and SHA-512 signatures are supported as
+well.
 
 %prep
 
