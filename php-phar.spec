@@ -5,7 +5,7 @@
 Summary:	Allows running of complete applications out of .phar files
 Name:		php-%{modname}
 Version:	1.2.3
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/phar
@@ -14,7 +14,7 @@ Requires:	php-bz2
 Requires:	php-hash
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	file
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This is the extension version of PEAR's PHP_Archive package. Support for
