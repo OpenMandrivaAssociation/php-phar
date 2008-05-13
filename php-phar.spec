@@ -4,12 +4,12 @@
 
 Summary:	Allows running of complete applications out of .phar files
 Name:		php-%{modname}
-Version:	1.2.3
-Release:	%mkrel 3
+Version:	2.0.0
+Release:	%mkrel 0.b1.1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/phar
-Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
+Source0:	http://pecl.php.net/get/%{modname}-%{version}b1.tgz
 Requires:	php-bz2
 Requires:	php-hash
 BuildRequires:	php-devel >= 3:5.2.0
@@ -35,7 +35,7 @@ well.
 
 %prep
 
-%setup -q -n %{modname}-%{version}
+%setup -q -n %{modname}-%{version}b1
 [ "../package*.xml" != "/" ] && mv ../package*.xml .
 
 # fix permissions
