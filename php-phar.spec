@@ -5,7 +5,7 @@
 Summary:	Allows running of complete applications out of .phar files
 Name:		php-%{modname}
 Version:	2.0.0
-Release:	%mkrel 0.1.RC1.3
+Release:	%mkrel 0.1.RC1.4
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/phar
