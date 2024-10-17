@@ -8,7 +8,7 @@ Version:	2.0.0
 Release:	%mkrel 5
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/phar
+URL:		https://pecl.php.net/package/phar
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 Requires:	php-bz2
 Requires:	php-hash
